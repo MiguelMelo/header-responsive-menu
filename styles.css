@@ -26,8 +26,6 @@ a {
 a:hover {
   opacity: 0.8;
   color: #b50cff;
-  border-bottom: 1px solid;
-  border-color: #fff;
 }
 
 .logo {
