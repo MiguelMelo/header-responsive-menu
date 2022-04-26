@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  color: #b50cff;
+}
+
+body,
+html {
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+  align-items: center;
+  gap: 10px;
+}
+
+a:hover {
+  opacity: 0.8;
+  color: #b50cff;
+  border-bottom: 1px solid;
+  border-color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.logo img {
+  height: 32px;
+  width: 32px;
+}
+
+.logo:hover {
+  border: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0e1015;
+  height: 10vh;
+}
+
+main {
+  height: 90vh;
+  background: url(images/bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 30px;
+}
+
+.mobile-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu div {
+  width: 25px;
+  height: 2px;
+  background: #b50cff;
+  margin: 5px;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100vw;
+    height: 90vh;
+    background: #0e1015;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
