@@ -25,7 +25,7 @@
   <h4 align="center">Preview on Vercel</h4>
   <img alt="Demo on Vercel" src="https://user-images.githubusercontent.com/14957405/165641965-39f739dc-6db4-45b6-8ec5-4e9cbf0dd6ea.gif">
 </p>
-<a align="center" style="border-radius:2px;outline:none;border:none;padding:8px;align-self:center;width:100%;cursor:pointer;background:#b50cff;color:white; text-decoration:none;" href="https://header-responsive-menu.vercel.app/" target="_blank">
+<a align="center" href="https://header-responsive-menu.vercel.app/" target="_blank">
     Live Preview
 </a>
 
